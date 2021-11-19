@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4d4(rax$*dghvzeb$e45lv7@mil0q)qd0jjcb@f_u357x%y^oa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ragalearning-log.herokuapp.com']
 
 
 # Application definition
@@ -153,7 +153,9 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # ALlow all host headers.
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['ragalearning-log.herokuapp.com']
+
+    DEBUG = False
 
     # Static asset configuration.
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
