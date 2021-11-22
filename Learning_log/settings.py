@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-4d4(rax$*dghvzeb$e45lv7@mil0q)qd0jjcb@f_u357x%y^oa
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = ['ragalearning-log.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -147,8 +147,8 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    # ALlow all host headers.
-    ALLOWED_HOSTS = ['ragalearning-log.herokuapp.com']
+    # Allow all host headers.
+    ALLOWED_HOSTS = ['*']
 
     DEBUG = False
 
