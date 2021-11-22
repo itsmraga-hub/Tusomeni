@@ -137,11 +137,6 @@ BOOTSTRAP3 = {
     'include_jquery': True,
 }
 
-# settings for django-bootstrap3
-BOOTSTRAP3 = {
-    'include_jquery': True,
-}
-
 # Heroku settings
 cwd = os.getcwd()
 if cwd == '/app' or cwd[:4] == '/tmp':
