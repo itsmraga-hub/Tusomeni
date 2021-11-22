@@ -1,3 +1,3 @@
-web: gunicorn --bind 0.0.0.0: learning_log:app
-python manage.py collectstatic --noinput
+web: gunicorn django_project.wsgi:application
+python manage.py collectstatic
 manage.py migrate
