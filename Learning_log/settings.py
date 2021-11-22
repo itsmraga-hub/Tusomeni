@@ -150,7 +150,7 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     # Allow all host headers.
     ALLOWED_HOSTS = ['*']
 
-    DEBUG = False
+    DEBUG = True
 
     # Static asset configuration.
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
