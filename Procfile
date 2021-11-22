@@ -1,1 +1,1 @@
-web: gunicorn ragalearning-log.wsgi:application
+web: gunicorn Learning_log.wsgi:application
