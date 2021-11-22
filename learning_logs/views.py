@@ -9,7 +9,7 @@ from .forms import TopicForm, EntryForm
 # Create your views here.
 def index(request):
     """The homepage for learning_logs"""
-    return render(request, 'learning_logs/index.html')
+    return render(request, 'Templates/learning_logs/index.html')
 
 
 @login_required
