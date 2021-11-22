@@ -1,3 +1,1 @@
-web: gunicorn django_project.wsgi:application
-python manage.py collectstatic
-manage.py migrate
+web: gunicorn ragalearning-log.wsgi:application
